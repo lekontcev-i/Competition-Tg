@@ -1,0 +1,1050 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F739BF630B6EFD6CFBDE48F /* Pods_Quickin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8476A45775FDA60E72289630 /* Pods_Quickin.framework */; };
+		5A3FF3BB3CE53D7A79E02DF3 /* Pods_QuickinAppClip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C16E3544E6C064F8CA9CD9 /* Pods_QuickinAppClip.framework */; };
+		6416B7002727ED2700D2433B /* QKDynamicLinkCheckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416B6FF2727ED2700D2433B /* QKDynamicLinkCheckService.swift */; };
+		6416B705272A7B3500D2433B /* QKStatusConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416B704272A7B3500D2433B /* QKStatusConnectionViewController.swift */; };
+		6416B709272A7BA600D2433B /* QKStatusConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6416B708272A7BA600D2433B /* QKStatusConnectionViewController.xib */; };
+		643C273F26D7CB4F0071957D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C273E26D7CB4F0071957D /* AppDelegate.swift */; };
+		643C274126D7CB4F0071957D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C274026D7CB4F0071957D /* SceneDelegate.swift */; };
+		643C274326D7CB4F0071957D /* QKMainAppClipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C274226D7CB4F0071957D /* QKMainAppClipViewController.swift */; };
+		643C274826D7CB510071957D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643C274726D7CB510071957D /* Assets.xcassets */; };
+		643C274B26D7CB510071957D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643C274926D7CB510071957D /* LaunchScreen.storyboard */; };
+		643C275026D7CB510071957D /* QuickinAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 643C273C26D7CB4F0071957D /* QuickinAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		643C275526D7CE1A0071957D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643C274726D7CB510071957D /* Assets.xcassets */; };
+		643C275926D7D0F60071957D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643C275826D7D0F60071957D /* NetworkExtension.framework */; };
+		643EA34826D9146E00118C5A /* QKMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643EA34726D9146E00118C5A /* QKMapViewController.swift */; };
+		643EA34A26D9199400118C5A /* QKHighlightedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643EA34926D9199400118C5A /* QKHighlightedButton.swift */; };
+		643EA34C26D9239700118C5A /* QKTutorialSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643EA34B26D9239600118C5A /* QKTutorialSecondViewController.swift */; };
+		643EA34E26D923C700118C5A /* QKTutorialThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643EA34D26D923C700118C5A /* QKTutorialThirdViewController.swift */; };
+		643EA35026D9272B00118C5A /* QKTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643EA34F26D9272B00118C5A /* QKTabBarViewController.swift */; };
+		643EA35326D9886100118C5A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 643EA35226D9886100118C5A /* Montserrat-Medium.ttf */; };
+		64472883274401E700F6CAB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64472882274401E700F6CAB9 /* GoogleService-Info.plist */; };
+		64571FA726D82A47002A5E94 /* QKWiFiConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FA626D82A47002A5E94 /* QKWiFiConnectViewController.swift */; };
+		64571FA926D82BD8002A5E94 /* QKTextFieldInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FA826D82BD8002A5E94 /* QKTextFieldInset.swift */; };
+		64571FAB26D8E31E002A5E94 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64571FAA26D8E31E002A5E94 /* Colors.xcassets */; };
+		64571FAE26D8E5D2002A5E94 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FAD26D8E5D2002A5E94 /* UIColorExtension.swift */; };
+		64571FB026D8E74F002A5E94 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FAF26D8E74F002A5E94 /* UIFontExtension.swift */; };
+		64571FB326D8E8CF002A5E94 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64571FB226D8E8CF002A5E94 /* Montserrat-Bold.ttf */; };
+		64571FB526D8E8DC002A5E94 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64571FB426D8E8DC002A5E94 /* Montserrat-SemiBold.ttf */; };
+		64571FB726D8E8E6002A5E94 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64571FB626D8E8E6002A5E94 /* Montserrat-Regular.ttf */; };
+		64571FBA26D8EC0C002A5E94 /* QKTutorialFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FB926D8EC0C002A5E94 /* QKTutorialFirstViewController.swift */; };
+		64571FBC26D8EC47002A5E94 /* QKTutorialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64571FBB26D8EC47002A5E94 /* QKTutorialViewController.storyboard */; };
+		64571FBF26D8F4D1002A5E94 /* QKQuickinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FBE26D8F4D1002A5E94 /* QKQuickinButton.swift */; };
+		64571FC126D8F5C1002A5E94 /* QKQuickinButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64571FC026D8F5C1002A5E94 /* QKQuickinButton.xib */; };
+		64571FC326D8FD8C002A5E94 /* UIView+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FC226D8FD8C002A5E94 /* UIView+Styles.swift */; };
+		64571FC526D8FF46002A5E94 /* QKContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FC426D8FF46002A5E94 /* QKContainerView.swift */; };
+		64571FC726D8FF84002A5E94 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FC626D8FF84002A5E94 /* UIView+Constraints.swift */; };
+		645822BC26E755B50096373D /* QKChangeValueControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645822BB26E755B50096373D /* QKChangeValueControl.swift */; };
+		645822BE26E755E30096373D /* QKChangeValueControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645822BD26E755E30096373D /* QKChangeValueControl.xib */; };
+		6465B96226D7A38A002CF932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6465B96126D7A38A002CF932 /* AppDelegate.swift */; };
+		6465B96426D7A38A002CF932 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6465B96326D7A38A002CF932 /* SceneDelegate.swift */; };
+		6465B96926D7A38A002CF932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6465B96726D7A38A002CF932 /* Main.storyboard */; };
+		6465B96B26D7A38B002CF932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6465B96A26D7A38B002CF932 /* Assets.xcassets */; };
+		6465B96E26D7A38B002CF932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6465B96C26D7A38B002CF932 /* LaunchScreen.storyboard */; };
+		6467DFA526D98F6100DA6FE1 /* QKTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467DFA426D98F6100DA6FE1 /* QKTutorialViewController.swift */; };
+		6482B3CE26DCED8E0032F3A5 /* QKMapControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3CD26DCED8E0032F3A5 /* QKMapControlsView.swift */; };
+		6482B3D026DCEE080032F3A5 /* QKMapControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6482B3CF26DCEE080032F3A5 /* QKMapControlsView.xib */; };
+		6482B3D226DD2E560032F3A5 /* QKMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3D126DD2E560032F3A5 /* QKMapManager.swift */; };
+		6482B3D426DD2FD80032F3A5 /* QKMapManager+Listeners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3D326DD2FD80032F3A5 /* QKMapManager+Listeners.swift */; };
+		6482B3D626DD307F0032F3A5 /* QKQuickinTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3D526DD307F0032F3A5 /* QKQuickinTypes.swift */; };
+		6482B3D826DD30F20032F3A5 /* QKMapManager+Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3D726DD30F20032F3A5 /* QKMapManager+Controls.swift */; };
+		6482B3DA26DD31F80032F3A5 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3D926DD31F80032F3A5 /* UIImage+Resize.swift */; };
+		6482B3DC26DD32FC0032F3A5 /* QKSafeAreaSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3DB26DD32FC0032F3A5 /* QKSafeAreaSize.swift */; };
+		6482B3DF26DD4BCC0032F3A5 /* QKQuickinPointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3DE26DD4BCC0032F3A5 /* QKQuickinPointModel.swift */; };
+		6482B3E126DD57ED0032F3A5 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3E026DD57ED0032F3A5 /* UIViewController+Extensions.swift */; };
+		6482B3E326DD58D00032F3A5 /* QKNextLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3E226DD58D00032F3A5 /* QKNextLoaderView.swift */; };
+		6482B3E526DD59090032F3A5 /* QKXibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3E426DD59090032F3A5 /* QKXibLoadable.swift */; };
+		6482B3E726DD594A0032F3A5 /* UIView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3E626DD594A0032F3A5 /* UIView+Rotation.swift */; };
+		6482B3E926DD596B0032F3A5 /* QKNextLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6482B3E826DD596B0032F3A5 /* QKNextLoaderView.xib */; };
+		6482B3EC26DD5B910032F3A5 /* QKBottomSheetInjectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3EB26DD5B910032F3A5 /* QKBottomSheetInjectionController.swift */; };
+		6482B3EE26DD5D330032F3A5 /* QKQuickinPointModel+Karte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3ED26DD5D330032F3A5 /* QKQuickinPointModel+Karte.swift */; };
+		6482B3F026DD5DBF0032F3A5 /* QKBottomSheetInjectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6482B3EF26DD5DBF0032F3A5 /* QKBottomSheetInjectionController.xib */; };
+		6482B3F226DD63810032F3A5 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3F126DD63810032F3A5 /* DummyData.swift */; };
+		6482B3F426DD6EB60032F3A5 /* QKQuickinPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3F326DD6EB60032F3A5 /* QKQuickinPointView.swift */; };
+		6482B3F626DD720F0032F3A5 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3F526DD720F0032F3A5 /* UIView+Nib.swift */; };
+		6482B3F826DD72C40032F3A5 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3F726DD72C40032F3A5 /* String+Extensions.swift */; };
+		6482B3FA26DD75AC0032F3A5 /* QKQuickinPointView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6482B3F926DD75AC0032F3A5 /* QKQuickinPointView.xib */; };
+		64C07B5726DF6D2600B64E88 /* QKProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C07B5626DF6D2600B64E88 /* QKProfileViewController.swift */; };
+		64C07B5926DF815700B64E88 /* QKMapSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C07B5826DF815700B64E88 /* QKMapSettingsViewController.swift */; };
+		64C07B5D26DF8B3A00B64E88 /* QKMapSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C07B5C26DF8B3A00B64E88 /* QKMapSettingsViewController.storyboard */; };
+		64C07B6226E0DE6C00B64E88 /* QKProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C07B6126E0DE6C00B64E88 /* QKProfileViewController.storyboard */; };
+		64C07B6426E0DF5000B64E88 /* QKMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C07B6326E0DF5000B64E88 /* QKMapViewController.storyboard */; };
+		64C07B6626E0DFA000B64E88 /* QKWiFiConnectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C07B6526E0DFA000B64E88 /* QKWiFiConnectViewController.storyboard */; };
+		64C07B6826E0E0EE00B64E88 /* QKSettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C07B6726E0E0EE00B64E88 /* QKSettingButton.swift */; };
+		64C07B6A26E0E10500B64E88 /* QKSettingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C07B6926E0E10400B64E88 /* QKSettingButton.xib */; };
+		64C07B6C26E1111900B64E88 /* QKPickValueControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C07B6B26E1111900B64E88 /* QKPickValueControl.swift */; };
+		64C07B6E26E1114000B64E88 /* QKPickValueControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C07B6D26E1114000B64E88 /* QKPickValueControl.xib */; };
+		64C5CD8A26E9F61D003B6AD9 /* QKQuickinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FBE26D8F4D1002A5E94 /* QKQuickinButton.swift */; };
+		64C5CD8B26E9F622003B6AD9 /* QKQuickinButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64571FC026D8F5C1002A5E94 /* QKQuickinButton.xib */; };
+		64C5CD8C26E9F826003B6AD9 /* QKContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FC426D8FF46002A5E94 /* QKContainerView.swift */; };
+		64C5CD8D26E9F830003B6AD9 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FC626D8FF84002A5E94 /* UIView+Constraints.swift */; };
+		64C5CD8E26E9F841003B6AD9 /* QKHighlightedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643EA34926D9199400118C5A /* QKHighlightedButton.swift */; };
+		64C5CD8F26E9F84A003B6AD9 /* QKQuickinTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3D526DD307F0032F3A5 /* QKQuickinTypes.swift */; };
+		64C5CD9026E9F853003B6AD9 /* UIView+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FC226D8FD8C002A5E94 /* UIView+Styles.swift */; };
+		64C5CD9126E9F865003B6AD9 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FAD26D8E5D2002A5E94 /* UIColorExtension.swift */; };
+		64C5CD9226E9F86F003B6AD9 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64571FAF26D8E74F002A5E94 /* UIFontExtension.swift */; };
+		64C5CD9326E9FF8A003B6AD9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64571FAA26D8E31E002A5E94 /* Colors.xcassets */; };
+		64C5CD9426EB95D8003B6AD9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3E026DD57ED0032F3A5 /* UIViewController+Extensions.swift */; };
+		64C5CD9526EB95E8003B6AD9 /* QKNextLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3E226DD58D00032F3A5 /* QKNextLoaderView.swift */; };
+		64C5CD9626EB95EF003B6AD9 /* QKNextLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6482B3E826DD596B0032F3A5 /* QKNextLoaderView.xib */; };
+		64C5CD9726EB95F9003B6AD9 /* QKXibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3E426DD59090032F3A5 /* QKXibLoadable.swift */; };
+		64C5CD9826EB9606003B6AD9 /* UIView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482B3E626DD594A0032F3A5 /* UIView+Rotation.swift */; };
+		64C5CD9926EB996C003B6AD9 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643C275826D7D0F60071957D /* NetworkExtension.framework */; };
+		64C5CD9A26EBA366003B6AD9 /* QKMainAppClipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C274226D7CB4F0071957D /* QKMainAppClipViewController.swift */; };
+		64C5CD9D26EBA3B2003B6AD9 /* QKMainAppClipViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C5CD9C26EBA3B2003B6AD9 /* QKMainAppClipViewController.storyboard */; };
+		64C5CD9E26EBA3B2003B6AD9 /* QKMainAppClipViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C5CD9C26EBA3B2003B6AD9 /* QKMainAppClipViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		643C274E26D7CB510071957D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6465B95626D7A389002CF932 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 643C273B26D7CB4F0071957D;
+			remoteInfo = QuickinAppClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		643C275426D7CB510071957D /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				643C275026D7CB510071957D /* QuickinAppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4C09EC2B28B96253A4457D9B /* Pods-QuickinAppClip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickinAppClip.debug.xcconfig"; path = "Target Support Files/Pods-QuickinAppClip/Pods-QuickinAppClip.debug.xcconfig"; sourceTree = "<group>"; };
+		58F652BFA9ECA342F26F0D9B /* Pods-Quickin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickin.debug.xcconfig"; path = "Target Support Files/Pods-Quickin/Pods-Quickin.debug.xcconfig"; sourceTree = "<group>"; };
+		6416B6FF2727ED2700D2433B /* QKDynamicLinkCheckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKDynamicLinkCheckService.swift; sourceTree = "<group>"; };
+		6416B704272A7B3500D2433B /* QKStatusConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKStatusConnectionViewController.swift; sourceTree = "<group>"; };
+		6416B708272A7BA600D2433B /* QKStatusConnectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QKStatusConnectionViewController.xib; sourceTree = "<group>"; };
+		643C273C26D7CB4F0071957D /* QuickinAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickinAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		643C273E26D7CB4F0071957D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		643C274026D7CB4F0071957D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		643C274226D7CB4F0071957D /* QKMainAppClipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKMainAppClipViewController.swift; sourceTree = "<group>"; };
+		643C274726D7CB510071957D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		643C274A26D7CB510071957D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		643C274C26D7CB510071957D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643C274D26D7CB510071957D /* QuickinAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickinAppClip.entitlements; sourceTree = "<group>"; };
+		643C275626D7D0EE0071957D /* Quickin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quickin.entitlements; sourceTree = "<group>"; };
+		643C275826D7D0F60071957D /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		643EA34726D9146E00118C5A /* QKMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKMapViewController.swift; sourceTree = "<group>"; };
+		643EA34926D9199400118C5A /* QKHighlightedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKHighlightedButton.swift; sourceTree = "<group>"; };
+		643EA34B26D9239600118C5A /* QKTutorialSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKTutorialSecondViewController.swift; sourceTree = "<group>"; };
+		643EA34D26D923C700118C5A /* QKTutorialThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKTutorialThirdViewController.swift; sourceTree = "<group>"; };
+		643EA34F26D9272B00118C5A /* QKTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKTabBarViewController.swift; sourceTree = "<group>"; };
+		643EA35226D9886100118C5A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		64472882274401E700F6CAB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		644728A32747DFD200F6CAB9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		644728A42747DFD200F6CAB9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		644728A52747DFD200F6CAB9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		64571FA626D82A47002A5E94 /* QKWiFiConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKWiFiConnectViewController.swift; sourceTree = "<group>"; };
+		64571FA826D82BD8002A5E94 /* QKTextFieldInset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKTextFieldInset.swift; sourceTree = "<group>"; };
+		64571FAA26D8E31E002A5E94 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		64571FAD26D8E5D2002A5E94 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		64571FAF26D8E74F002A5E94 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		64571FB226D8E8CF002A5E94 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		64571FB426D8E8DC002A5E94 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		64571FB626D8E8E6002A5E94 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		64571FB926D8EC0C002A5E94 /* QKTutorialFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKTutorialFirstViewController.swift; sourceTree = "<group>"; };
+		64571FBB26D8EC47002A5E94 /* QKTutorialViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QKTutorialViewController.storyboard; sourceTree = "<group>"; };
+		64571FBE26D8F4D1002A5E94 /* QKQuickinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKQuickinButton.swift; sourceTree = "<group>"; };
+		64571FC026D8F5C1002A5E94 /* QKQuickinButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QKQuickinButton.xib; sourceTree = "<group>"; };
+		64571FC226D8FD8C002A5E94 /* UIView+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Styles.swift"; sourceTree = "<group>"; };
+		64571FC426D8FF46002A5E94 /* QKContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKContainerView.swift; sourceTree = "<group>"; };
+		64571FC626D8FF84002A5E94 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		645822BB26E755B50096373D /* QKChangeValueControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKChangeValueControl.swift; sourceTree = "<group>"; };
+		645822BD26E755E30096373D /* QKChangeValueControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QKChangeValueControl.xib; sourceTree = "<group>"; };
+		6465B95E26D7A38A002CF932 /* Quickin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quickin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6465B96126D7A38A002CF932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6465B96326D7A38A002CF932 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6465B96826D7A38A002CF932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6465B96A26D7A38B002CF932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6465B96D26D7A38B002CF932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6465B96F26D7A38B002CF932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6467DFA426D98F6100DA6FE1 /* QKTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKTutorialViewController.swift; sourceTree = "<group>"; };
+		6482B3CD26DCED8E0032F3A5 /* QKMapControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKMapControlsView.swift; sourceTree = "<group>"; };
+		6482B3CF26DCEE080032F3A5 /* QKMapControlsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QKMapControlsView.xib; sourceTree = "<group>"; };
+		6482B3D126DD2E560032F3A5 /* QKMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKMapManager.swift; sourceTree = "<group>"; };
+		6482B3D326DD2FD80032F3A5 /* QKMapManager+Listeners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QKMapManager+Listeners.swift"; sourceTree = "<group>"; };
+		6482B3D526DD307F0032F3A5 /* QKQuickinTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKQuickinTypes.swift; sourceTree = "<group>"; };
+		6482B3D726DD30F20032F3A5 /* QKMapManager+Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QKMapManager+Controls.swift"; sourceTree = "<group>"; };
+		6482B3D926DD31F80032F3A5 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		6482B3DB26DD32FC0032F3A5 /* QKSafeAreaSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKSafeAreaSize.swift; sourceTree = "<group>"; };
+		6482B3DE26DD4BCC0032F3A5 /* QKQuickinPointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKQuickinPointModel.swift; sourceTree = "<group>"; };
+		6482B3E026DD57ED0032F3A5 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		6482B3E226DD58D00032F3A5 /* QKNextLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKNextLoaderView.swift; sourceTree = "<group>"; };
+		6482B3E426DD59090032F3A5 /* QKXibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKXibLoadable.swift; sourceTree = "<group>"; };
+		6482B3E626DD594A0032F3A5 /* UIView+Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rotation.swift"; sourceTree = "<group>"; };
+		6482B3E826DD596B0032F3A5 /* QKNextLoaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QKNextLoaderView.xib; sourceTree = "<group>"; };
+		6482B3EB26DD5B910032F3A5 /* QKBottomSheetInjectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKBottomSheetInjectionController.swift; sourceTree = "<group>"; };
+		6482B3ED26DD5D330032F3A5 /* QKQuickinPointModel+Karte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QKQuickinPointModel+Karte.swift"; sourceTree = "<group>"; };
+		6482B3EF26DD5DBF0032F3A5 /* QKBottomSheetInjectionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QKBottomSheetInjectionController.xib; sourceTree = "<group>"; };
+		6482B3F126DD63810032F3A5 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		6482B3F326DD6EB60032F3A5 /* QKQuickinPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKQuickinPointView.swift; sourceTree = "<group>"; };
+		6482B3F526DD720F0032F3A5 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		6482B3F726DD72C40032F3A5 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		6482B3F926DD75AC0032F3A5 /* QKQuickinPointView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QKQuickinPointView.xib; sourceTree = "<group>"; };
+		64C07B5626DF6D2600B64E88 /* QKProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKProfileViewController.swift; sourceTree = "<group>"; };
+		64C07B5826DF815700B64E88 /* QKMapSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKMapSettingsViewController.swift; sourceTree = "<group>"; };
+		64C07B5C26DF8B3A00B64E88 /* QKMapSettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QKMapSettingsViewController.storyboard; sourceTree = "<group>"; };
+		64C07B6126E0DE6C00B64E88 /* QKProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QKProfileViewController.storyboard; sourceTree = "<group>"; };
+		64C07B6326E0DF5000B64E88 /* QKMapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QKMapViewController.storyboard; sourceTree = "<group>"; };
+		64C07B6526E0DFA000B64E88 /* QKWiFiConnectViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QKWiFiConnectViewController.storyboard; sourceTree = "<group>"; };
+		64C07B6726E0E0EE00B64E88 /* QKSettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKSettingButton.swift; sourceTree = "<group>"; };
+		64C07B6926E0E10400B64E88 /* QKSettingButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QKSettingButton.xib; sourceTree = "<group>"; };
+		64C07B6B26E1111900B64E88 /* QKPickValueControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QKPickValueControl.swift; sourceTree = "<group>"; };
+		64C07B6D26E1114000B64E88 /* QKPickValueControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QKPickValueControl.xib; sourceTree = "<group>"; };
+		64C5CD9C26EBA3B2003B6AD9 /* QKMainAppClipViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QKMainAppClipViewController.storyboard; sourceTree = "<group>"; };
+		816CBE462F4DB0305DF38240 /* Pods-Quickin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quickin.release.xcconfig"; path = "Target Support Files/Pods-Quickin/Pods-Quickin.release.xcconfig"; sourceTree = "<group>"; };
+		8476A45775FDA60E72289630 /* Pods_Quickin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quickin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4AC70C4219E664EEC26A27F /* Pods-QuickinAppClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickinAppClip.release.xcconfig"; path = "Target Support Files/Pods-QuickinAppClip/Pods-QuickinAppClip.release.xcconfig"; sourceTree = "<group>"; };
+		F8C16E3544E6C064F8CA9CD9 /* Pods_QuickinAppClip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickinAppClip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		643C273926D7CB4F0071957D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3FF3BB3CE53D7A79E02DF3 /* Pods_QuickinAppClip.framework in Frameworks */,
+				64C5CD9926EB996C003B6AD9 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6465B95B26D7A38A002CF932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643C275926D7D0F60071957D /* NetworkExtension.framework in Frameworks */,
+				0F739BF630B6EFD6CFBDE48F /* Pods_Quickin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		643C273D26D7CB4F0071957D /* QuickinAppClip */ = {
+			isa = PBXGroup;
+			children = (
+				643C273E26D7CB4F0071957D /* AppDelegate.swift */,
+				643C274026D7CB4F0071957D /* SceneDelegate.swift */,
+				643C274226D7CB4F0071957D /* QKMainAppClipViewController.swift */,
+				64C5CD9C26EBA3B2003B6AD9 /* QKMainAppClipViewController.storyboard */,
+				643C274726D7CB510071957D /* Assets.xcassets */,
+				643C274926D7CB510071957D /* LaunchScreen.storyboard */,
+				643C274C26D7CB510071957D /* Info.plist */,
+				643C274D26D7CB510071957D /* QuickinAppClip.entitlements */,
+			);
+			path = QuickinAppClip;
+			sourceTree = "<group>";
+		};
+		643C275726D7D0F60071957D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				643C275826D7D0F60071957D /* NetworkExtension.framework */,
+				8476A45775FDA60E72289630 /* Pods_Quickin.framework */,
+				F8C16E3544E6C064F8CA9CD9 /* Pods_QuickinAppClip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		643EA35126D9600100118C5A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				643EA34F26D9272B00118C5A /* QKTabBarViewController.swift */,
+				6416B704272A7B3500D2433B /* QKStatusConnectionViewController.swift */,
+				6416B708272A7BA600D2433B /* QKStatusConnectionViewController.xib */,
+				64571FB826D8EBD6002A5E94 /* Tutorial */,
+				64C07B5E26DFB6A100B64E88 /* Map */,
+				64C07B5F26DFB6B100B64E88 /* Connection */,
+				64C07B6026DFB6BC00B64E88 /* Profile */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		64571FAC26D8E5BA002A5E94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64571FAD26D8E5D2002A5E94 /* UIColorExtension.swift */,
+				64571FAF26D8E74F002A5E94 /* UIFontExtension.swift */,
+				64571FC226D8FD8C002A5E94 /* UIView+Styles.swift */,
+				64571FC626D8FF84002A5E94 /* UIView+Constraints.swift */,
+				6482B3E626DD594A0032F3A5 /* UIView+Rotation.swift */,
+				6482B3F526DD720F0032F3A5 /* UIView+Nib.swift */,
+				6482B3D926DD31F80032F3A5 /* UIImage+Resize.swift */,
+				6482B3E026DD57ED0032F3A5 /* UIViewController+Extensions.swift */,
+				6482B3DB26DD32FC0032F3A5 /* QKSafeAreaSize.swift */,
+				64571FC426D8FF46002A5E94 /* QKContainerView.swift */,
+				64571FA826D82BD8002A5E94 /* QKTextFieldInset.swift */,
+				643EA34926D9199400118C5A /* QKHighlightedButton.swift */,
+				6482B3D526DD307F0032F3A5 /* QKQuickinTypes.swift */,
+				6482B3E426DD59090032F3A5 /* QKXibLoadable.swift */,
+				6482B3F726DD72C40032F3A5 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64571FB126D8E8BB002A5E94 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				64571FB226D8E8CF002A5E94 /* Montserrat-Bold.ttf */,
+				64571FB426D8E8DC002A5E94 /* Montserrat-SemiBold.ttf */,
+				64571FB626D8E8E6002A5E94 /* Montserrat-Regular.ttf */,
+				643EA35226D9886100118C5A /* Montserrat-Medium.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		64571FB826D8EBD6002A5E94 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				6467DFA426D98F6100DA6FE1 /* QKTutorialViewController.swift */,
+				64571FB926D8EC0C002A5E94 /* QKTutorialFirstViewController.swift */,
+				643EA34B26D9239600118C5A /* QKTutorialSecondViewController.swift */,
+				643EA34D26D923C700118C5A /* QKTutorialThirdViewController.swift */,
+				64571FBB26D8EC47002A5E94 /* QKTutorialViewController.storyboard */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		64571FBD26D8F498002A5E94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6482B3CD26DCED8E0032F3A5 /* QKMapControlsView.swift */,
+				6482B3CF26DCEE080032F3A5 /* QKMapControlsView.xib */,
+				64571FBE26D8F4D1002A5E94 /* QKQuickinButton.swift */,
+				64571FC026D8F5C1002A5E94 /* QKQuickinButton.xib */,
+				64C07B6726E0E0EE00B64E88 /* QKSettingButton.swift */,
+				64C07B6926E0E10400B64E88 /* QKSettingButton.xib */,
+				6482B3E226DD58D00032F3A5 /* QKNextLoaderView.swift */,
+				6482B3E826DD596B0032F3A5 /* QKNextLoaderView.xib */,
+				6482B3F326DD6EB60032F3A5 /* QKQuickinPointView.swift */,
+				6482B3F926DD75AC0032F3A5 /* QKQuickinPointView.xib */,
+				645822BB26E755B50096373D /* QKChangeValueControl.swift */,
+				645822BD26E755E30096373D /* QKChangeValueControl.xib */,
+				64C07B6B26E1111900B64E88 /* QKPickValueControl.swift */,
+				64C07B6D26E1114000B64E88 /* QKPickValueControl.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6465B95526D7A389002CF932 = {
+			isa = PBXGroup;
+			children = (
+				6465B96026D7A38A002CF932 /* Quickin */,
+				643C273D26D7CB4F0071957D /* QuickinAppClip */,
+				6465B95F26D7A38A002CF932 /* Products */,
+				643C275726D7D0F60071957D /* Frameworks */,
+				DD94D3F719201FA39C96598E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6465B95F26D7A38A002CF932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6465B95E26D7A38A002CF932 /* Quickin.app */,
+				643C273C26D7CB4F0071957D /* QuickinAppClip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6465B96026D7A38A002CF932 /* Quickin */ = {
+			isa = PBXGroup;
+			children = (
+				64472882274401E700F6CAB9 /* GoogleService-Info.plist */,
+				643C275626D7D0EE0071957D /* Quickin.entitlements */,
+				6482B3DD26DD4B9F0032F3A5 /* Models */,
+				64571FAC26D8E5BA002A5E94 /* Extensions */,
+				64571FBD26D8F498002A5E94 /* Views */,
+				643EA35126D9600100118C5A /* Controllers */,
+				6482B3EA26DD5B730032F3A5 /* Services */,
+				6465B96126D7A38A002CF932 /* AppDelegate.swift */,
+				6465B96326D7A38A002CF932 /* SceneDelegate.swift */,
+				6465B96726D7A38A002CF932 /* Main.storyboard */,
+				6465B96A26D7A38B002CF932 /* Assets.xcassets */,
+				64571FAA26D8E31E002A5E94 /* Colors.xcassets */,
+				6465B96C26D7A38B002CF932 /* LaunchScreen.storyboard */,
+				6465B96F26D7A38B002CF932 /* Info.plist */,
+				64571FB126D8E8BB002A5E94 /* Font */,
+				6482B3F126DD63810032F3A5 /* DummyData.swift */,
+			);
+			path = Quickin;
+			sourceTree = "<group>";
+		};
+		6482B3DD26DD4B9F0032F3A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6482B3DE26DD4BCC0032F3A5 /* QKQuickinPointModel.swift */,
+				6482B3ED26DD5D330032F3A5 /* QKQuickinPointModel+Karte.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6482B3EA26DD5B730032F3A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6482B3D126DD2E560032F3A5 /* QKMapManager.swift */,
+				6482B3D326DD2FD80032F3A5 /* QKMapManager+Listeners.swift */,
+				6482B3D726DD30F20032F3A5 /* QKMapManager+Controls.swift */,
+				6416B6FF2727ED2700D2433B /* QKDynamicLinkCheckService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		64C07B5E26DFB6A100B64E88 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				643EA34726D9146E00118C5A /* QKMapViewController.swift */,
+				64C07B6326E0DF5000B64E88 /* QKMapViewController.storyboard */,
+				64C07B5826DF815700B64E88 /* QKMapSettingsViewController.swift */,
+				64C07B5C26DF8B3A00B64E88 /* QKMapSettingsViewController.storyboard */,
+				6482B3EB26DD5B910032F3A5 /* QKBottomSheetInjectionController.swift */,
+				6482B3EF26DD5DBF0032F3A5 /* QKBottomSheetInjectionController.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		64C07B5F26DFB6B100B64E88 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				64571FA626D82A47002A5E94 /* QKWiFiConnectViewController.swift */,
+				64C07B6526E0DFA000B64E88 /* QKWiFiConnectViewController.storyboard */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		64C07B6026DFB6BC00B64E88 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				64C07B5626DF6D2600B64E88 /* QKProfileViewController.swift */,
+				64C07B6126E0DE6C00B64E88 /* QKProfileViewController.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DD94D3F719201FA39C96598E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58F652BFA9ECA342F26F0D9B /* Pods-Quickin.debug.xcconfig */,
+				816CBE462F4DB0305DF38240 /* Pods-Quickin.release.xcconfig */,
+				4C09EC2B28B96253A4457D9B /* Pods-QuickinAppClip.debug.xcconfig */,
+				E4AC70C4219E664EEC26A27F /* Pods-QuickinAppClip.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		643C273B26D7CB4F0071957D /* QuickinAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 643C275126D7CB510071957D /* Build configuration list for PBXNativeTarget "QuickinAppClip" */;
+			buildPhases = (
+				D537BC248A6FF9FA8854D5D1 /* [CP] Check Pods Manifest.lock */,
+				643C273826D7CB4F0071957D /* Sources */,
+				643C273926D7CB4F0071957D /* Frameworks */,
+				643C273A26D7CB4F0071957D /* Resources */,
+				35A0AE8B857E8037A7241E0C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickinAppClip;
+			productName = QuickinAppClip;
+			productReference = 643C273C26D7CB4F0071957D /* QuickinAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		6465B95D26D7A38A002CF932 /* Quickin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6465B97226D7A38B002CF932 /* Build configuration list for PBXNativeTarget "Quickin" */;
+			buildPhases = (
+				8A8A9DC07E338148EBCD67E4 /* [CP] Check Pods Manifest.lock */,
+				6465B95A26D7A38A002CF932 /* Sources */,
+				6465B95B26D7A38A002CF932 /* Frameworks */,
+				6465B95C26D7A38A002CF932 /* Resources */,
+				643C275426D7CB510071957D /* Embed App Clips */,
+				9C6C7217DB34CC273919D124 /* [CP] Embed Pods Frameworks */,
+				070E86D18869F689B1FE7E22 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				643C274F26D7CB510071957D /* PBXTargetDependency */,
+			);
+			name = Quickin;
+			packageProductDependencies = (
+			);
+			productName = Quickin;
+			productReference = 6465B95E26D7A38A002CF932 /* Quickin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6465B95626D7A389002CF932 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					643C273B26D7CB4F0071957D = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					6465B95D26D7A38A002CF932 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 6465B95926D7A389002CF932 /* Build configuration list for PBXProject "Quickin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 6465B95526D7A389002CF932;
+			packageReferences = (
+			);
+			productRefGroup = 6465B95F26D7A38A002CF932 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6465B95D26D7A38A002CF932 /* Quickin */,
+				643C273B26D7CB4F0071957D /* QuickinAppClip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		643C273A26D7CB4F0071957D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C5CD9326E9FF8A003B6AD9 /* Colors.xcassets in Resources */,
+				64C5CD8B26E9F622003B6AD9 /* QKQuickinButton.xib in Resources */,
+				643C274B26D7CB510071957D /* LaunchScreen.storyboard in Resources */,
+				643C274826D7CB510071957D /* Assets.xcassets in Resources */,
+				64C5CD9E26EBA3B2003B6AD9 /* QKMainAppClipViewController.storyboard in Resources */,
+				64C5CD9626EB95EF003B6AD9 /* QKNextLoaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6465B95C26D7A38A002CF932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64571FB726D8E8E6002A5E94 /* Montserrat-Regular.ttf in Resources */,
+				64571FBC26D8EC47002A5E94 /* QKTutorialViewController.storyboard in Resources */,
+				64472883274401E700F6CAB9 /* GoogleService-Info.plist in Resources */,
+				6482B3FA26DD75AC0032F3A5 /* QKQuickinPointView.xib in Resources */,
+				64C07B6626E0DFA000B64E88 /* QKWiFiConnectViewController.storyboard in Resources */,
+				6416B709272A7BA600D2433B /* QKStatusConnectionViewController.xib in Resources */,
+				64C07B6226E0DE6C00B64E88 /* QKProfileViewController.storyboard in Resources */,
+				64571FAB26D8E31E002A5E94 /* Colors.xcassets in Resources */,
+				64C5CD9D26EBA3B2003B6AD9 /* QKMainAppClipViewController.storyboard in Resources */,
+				64C07B6A26E0E10500B64E88 /* QKSettingButton.xib in Resources */,
+				6482B3E926DD596B0032F3A5 /* QKNextLoaderView.xib in Resources */,
+				64571FC126D8F5C1002A5E94 /* QKQuickinButton.xib in Resources */,
+				6465B96E26D7A38B002CF932 /* LaunchScreen.storyboard in Resources */,
+				64C07B5D26DF8B3A00B64E88 /* QKMapSettingsViewController.storyboard in Resources */,
+				64571FB326D8E8CF002A5E94 /* Montserrat-Bold.ttf in Resources */,
+				64571FB526D8E8DC002A5E94 /* Montserrat-SemiBold.ttf in Resources */,
+				64C07B6E26E1114000B64E88 /* QKPickValueControl.xib in Resources */,
+				6465B96B26D7A38B002CF932 /* Assets.xcassets in Resources */,
+				64C07B6426E0DF5000B64E88 /* QKMapViewController.storyboard in Resources */,
+				643C275526D7CE1A0071957D /* Assets.xcassets in Resources */,
+				645822BE26E755E30096373D /* QKChangeValueControl.xib in Resources */,
+				6482B3F026DD5DBF0032F3A5 /* QKBottomSheetInjectionController.xib in Resources */,
+				643EA35326D9886100118C5A /* Montserrat-Medium.ttf in Resources */,
+				6465B96926D7A38A002CF932 /* Main.storyboard in Resources */,
+				6482B3D026DCEE080032F3A5 /* QKMapControlsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		070E86D18869F689B1FE7E22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quickin/Pods-Quickin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quickin/Pods-Quickin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quickin/Pods-Quickin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35A0AE8B857E8037A7241E0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickinAppClip/Pods-QuickinAppClip-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickinAppClip/Pods-QuickinAppClip-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickinAppClip/Pods-QuickinAppClip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A8A9DC07E338148EBCD67E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quickin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C6C7217DB34CC273919D124 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quickin/Pods-Quickin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quickin/Pods-Quickin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quickin/Pods-Quickin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D537BC248A6FF9FA8854D5D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickinAppClip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		643C273826D7CB4F0071957D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C5CD8A26E9F61D003B6AD9 /* QKQuickinButton.swift in Sources */,
+				64C5CD8E26E9F841003B6AD9 /* QKHighlightedButton.swift in Sources */,
+				64C5CD9826EB9606003B6AD9 /* UIView+Rotation.swift in Sources */,
+				64C5CD8C26E9F826003B6AD9 /* QKContainerView.swift in Sources */,
+				643C274326D7CB4F0071957D /* QKMainAppClipViewController.swift in Sources */,
+				64C5CD9426EB95D8003B6AD9 /* UIViewController+Extensions.swift in Sources */,
+				64C5CD9026E9F853003B6AD9 /* UIView+Styles.swift in Sources */,
+				64C5CD8F26E9F84A003B6AD9 /* QKQuickinTypes.swift in Sources */,
+				64C5CD9526EB95E8003B6AD9 /* QKNextLoaderView.swift in Sources */,
+				64C5CD8D26E9F830003B6AD9 /* UIView+Constraints.swift in Sources */,
+				64C5CD9726EB95F9003B6AD9 /* QKXibLoadable.swift in Sources */,
+				64C5CD9126E9F865003B6AD9 /* UIColorExtension.swift in Sources */,
+				643C273F26D7CB4F0071957D /* AppDelegate.swift in Sources */,
+				643C274126D7CB4F0071957D /* SceneDelegate.swift in Sources */,
+				64C5CD9226E9F86F003B6AD9 /* UIFontExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6465B95A26D7A38A002CF932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C07B5726DF6D2600B64E88 /* QKProfileViewController.swift in Sources */,
+				6482B3D426DD2FD80032F3A5 /* QKMapManager+Listeners.swift in Sources */,
+				64571FBA26D8EC0C002A5E94 /* QKTutorialFirstViewController.swift in Sources */,
+				6482B3EC26DD5B910032F3A5 /* QKBottomSheetInjectionController.swift in Sources */,
+				6482B3E126DD57ED0032F3A5 /* UIViewController+Extensions.swift in Sources */,
+				6416B705272A7B3500D2433B /* QKStatusConnectionViewController.swift in Sources */,
+				643EA34A26D9199400118C5A /* QKHighlightedButton.swift in Sources */,
+				64571FC326D8FD8C002A5E94 /* UIView+Styles.swift in Sources */,
+				6482B3D826DD30F20032F3A5 /* QKMapManager+Controls.swift in Sources */,
+				643EA35026D9272B00118C5A /* QKTabBarViewController.swift in Sources */,
+				6482B3F626DD720F0032F3A5 /* UIView+Nib.swift in Sources */,
+				64C07B6826E0E0EE00B64E88 /* QKSettingButton.swift in Sources */,
+				64571FC726D8FF84002A5E94 /* UIView+Constraints.swift in Sources */,
+				6482B3F426DD6EB60032F3A5 /* QKQuickinPointView.swift in Sources */,
+				645822BC26E755B50096373D /* QKChangeValueControl.swift in Sources */,
+				6482B3D226DD2E560032F3A5 /* QKMapManager.swift in Sources */,
+				6482B3E526DD59090032F3A5 /* QKXibLoadable.swift in Sources */,
+				6482B3E326DD58D00032F3A5 /* QKNextLoaderView.swift in Sources */,
+				64C07B6C26E1111900B64E88 /* QKPickValueControl.swift in Sources */,
+				6465B96226D7A38A002CF932 /* AppDelegate.swift in Sources */,
+				6482B3F826DD72C40032F3A5 /* String+Extensions.swift in Sources */,
+				64571FBF26D8F4D1002A5E94 /* QKQuickinButton.swift in Sources */,
+				64571FA926D82BD8002A5E94 /* QKTextFieldInset.swift in Sources */,
+				643EA34E26D923C700118C5A /* QKTutorialThirdViewController.swift in Sources */,
+				6482B3F226DD63810032F3A5 /* DummyData.swift in Sources */,
+				64C5CD9A26EBA366003B6AD9 /* QKMainAppClipViewController.swift in Sources */,
+				6482B3E726DD594A0032F3A5 /* UIView+Rotation.swift in Sources */,
+				64571FB026D8E74F002A5E94 /* UIFontExtension.swift in Sources */,
+				6482B3EE26DD5D330032F3A5 /* QKQuickinPointModel+Karte.swift in Sources */,
+				6482B3D626DD307F0032F3A5 /* QKQuickinTypes.swift in Sources */,
+				6482B3DC26DD32FC0032F3A5 /* QKSafeAreaSize.swift in Sources */,
+				6482B3DF26DD4BCC0032F3A5 /* QKQuickinPointModel.swift in Sources */,
+				6465B96426D7A38A002CF932 /* SceneDelegate.swift in Sources */,
+				6482B3CE26DCED8E0032F3A5 /* QKMapControlsView.swift in Sources */,
+				64C07B5926DF815700B64E88 /* QKMapSettingsViewController.swift in Sources */,
+				643EA34C26D9239700118C5A /* QKTutorialSecondViewController.swift in Sources */,
+				64571FC526D8FF46002A5E94 /* QKContainerView.swift in Sources */,
+				6467DFA526D98F6100DA6FE1 /* QKTutorialViewController.swift in Sources */,
+				64571FA726D82A47002A5E94 /* QKWiFiConnectViewController.swift in Sources */,
+				6482B3DA26DD31F80032F3A5 /* UIImage+Resize.swift in Sources */,
+				643EA34826D9146E00118C5A /* QKMapViewController.swift in Sources */,
+				6416B7002727ED2700D2433B /* QKDynamicLinkCheckService.swift in Sources */,
+				64571FAE26D8E5D2002A5E94 /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		643C274F26D7CB510071957D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 643C273B26D7CB4F0071957D /* QuickinAppClip */;
+			targetProxy = 643C274E26D7CB510071957D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		643C274926D7CB510071957D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643C274A26D7CB510071957D /* Base */,
+				644728A52747DFD200F6CAB9 /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6465B96726D7A38A002CF932 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6465B96826D7A38A002CF932 /* Base */,
+				644728A32747DFD200F6CAB9 /* ru */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6465B96C26D7A38B002CF932 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6465B96D26D7A38B002CF932 /* Base */,
+				644728A42747DFD200F6CAB9 /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		643C275226D7CB510071957D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C09EC2B28B96253A4457D9B /* Pods-QuickinAppClip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuickinAppClip/QuickinAppClip.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = 28LW9SX73B;
+				INFOPLIST_FILE = QuickinAppClip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.fsiti.quickin.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "QuickinAppClip Dev Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		643C275326D7CB510071957D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4AC70C4219E664EEC26A27F /* Pods-QuickinAppClip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuickinAppClip/QuickinAppClip.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = 28LW9SX73B;
+				INFOPLIST_FILE = QuickinAppClip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.fsiti.quickin.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "QuickinAppClip Dist Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6465B97026D7A38B002CF932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6465B97126D7A38B002CF932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6465B97326D7A38B002CF932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F652BFA9ECA342F26F0D9B /* Pods-Quickin.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Quickin/Quickin.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = 28LW9SX73B;
+				INFOPLIST_FILE = Quickin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.fsiti.quickin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Quickin Dev Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6465B97426D7A38B002CF932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 816CBE462F4DB0305DF38240 /* Pods-Quickin.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Quickin/Quickin.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = 28LW9SX73B;
+				INFOPLIST_FILE = Quickin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.fsiti.quickin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Quickin Dist Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		643C275126D7CB510071957D /* Build configuration list for PBXNativeTarget "QuickinAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643C275226D7CB510071957D /* Debug */,
+				643C275326D7CB510071957D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6465B95926D7A389002CF932 /* Build configuration list for PBXProject "Quickin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6465B97026D7A38B002CF932 /* Debug */,
+				6465B97126D7A38B002CF932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6465B97226D7A38B002CF932 /* Build configuration list for PBXNativeTarget "Quickin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6465B97326D7A38B002CF932 /* Debug */,
+				6465B97426D7A38B002CF932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6465B95626D7A389002CF932 /* Project object */;
+}

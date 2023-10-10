@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l6F-T2-7Im">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main App Clip View Controller-->
+        <scene sceneID="nwv-ca-7bm">
+            <objects>
+                <viewController id="l6F-T2-7Im" customClass="QKMainAppClipViewController" customModule="Quickin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AZw-WJ-c7N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_quickin" translatesAutoresizingMaskIntoConstraints="NO" id="dT6-4x-5Wd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="bQl-Cn-Sa6"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CTo-Za-sdn">
+                                <rect key="frame" x="16" y="384" width="382" height="354"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MvQ-eF-Gv4">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="110.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZP-Rl-nrX">
+                                        <rect key="frame" x="0.0" y="110.5" width="382" height="133"/>
+                                        <string key="text">Мобильное приложение Quickin ваш персональный ключ для авторизации в Wi-Fi сетях. Зарегистрируйтесь в один клик и получайте Интернет "как дома" во всех Wi-Fi сетях в партнерских точках продаж.</string>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
+                                        <color key="textColor" name="ui_color_black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3K-PY-QEm">
+                                        <rect key="frame" x="0.0" y="243.5" width="382" height="110.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="l3K-PY-QEm" firstAttribute="height" secondItem="MvQ-eF-Gv4" secondAttribute="height" id="2Nf-Kn-Wgr"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUt-Im-S5e" customClass="QKQuickinButton" customModule="Quickin" customModuleProvider="target">
+                                <rect key="frame" x="32" y="752" width="350" height="60"/>
+                                <color key="backgroundColor" name="ui_color_orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xAs-xy-ANr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KZB-GP-9mp"/>
+                        <color key="backgroundColor" name="ui_color_light_yellow"/>
+                        <constraints>
+                            <constraint firstItem="KZB-GP-9mp" firstAttribute="bottom" secondItem="nUt-Im-S5e" secondAttribute="bottom" constant="50" id="363-S7-50s"/>
+                            <constraint firstAttribute="trailing" secondItem="nUt-Im-S5e" secondAttribute="trailing" constant="32" id="3Ft-hA-J9M"/>
+                            <constraint firstItem="nUt-Im-S5e" firstAttribute="leading" secondItem="AZw-WJ-c7N" secondAttribute="leading" constant="32" id="7z9-u8-ChT"/>
+                            <constraint firstAttribute="trailing" secondItem="dT6-4x-5Wd" secondAttribute="trailing" id="KFL-2S-R0k"/>
+                            <constraint firstAttribute="trailing" secondItem="CTo-Za-sdn" secondAttribute="trailing" constant="16" id="Vsv-i7-zPk"/>
+                            <constraint firstItem="CTo-Za-sdn" firstAttribute="top" secondItem="dT6-4x-5Wd" secondAttribute="bottom" constant="4" id="he5-gl-rj4"/>
+                            <constraint firstItem="CTo-Za-sdn" firstAttribute="leading" secondItem="AZw-WJ-c7N" secondAttribute="leading" constant="16" id="o3P-Yy-F9f"/>
+                            <constraint firstItem="dT6-4x-5Wd" firstAttribute="top" secondItem="AZw-WJ-c7N" secondAttribute="top" id="qU5-b8-oTf"/>
+                            <constraint firstItem="nUt-Im-S5e" firstAttribute="top" secondItem="CTo-Za-sdn" secondAttribute="bottom" constant="14" id="qcH-1d-rvU"/>
+                            <constraint firstItem="dT6-4x-5Wd" firstAttribute="leading" secondItem="AZw-WJ-c7N" secondAttribute="leading" id="xKI-ce-5Il"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerImageView" destination="dT6-4x-5Wd" id="Ewi-jg-3sl"/>
+                        <outlet property="connectionButton" destination="nUt-Im-S5e" id="ptQ-HS-FPh"/>
+                        <outlet property="textLabel" destination="KZP-Rl-nrX" id="xde-eS-IsF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQk-HE-nlY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner_quickin" width="998" height="1000"/>
+        <namedColor name="ui_color_black">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ui_color_light_yellow">
+            <color red="1" green="0.97647058823529409" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ui_color_orange">
+            <color red="0.97647058823529409" green="0.6588235294117647" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

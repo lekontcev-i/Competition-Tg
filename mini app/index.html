@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заправка бензоколонки</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #otherAmountInput {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="screen1">
+    <h1>Select fuel type:</h1>
+    <button class="button" id="btn1">E 5</button>
+    <button class="button" id="btn2">E 19</button>
+    <button class="button" id="btn3">E 85</button>
+    <button class="button" id="btn4">LPG</button>
+</div>
+
+<div class="container" id="screen2">
+    <h2>Enter amount:</h2>
+    <button class="button" id="btn100">100</button>
+    <button class="button" id="btn500">500</button>
+    <button class="button" id="btn1000">1000</button>
+    <button class="button" id="btnOther">Other amount</button>
+    <div id="otherAmountInput">
+        <input type="number" id="customAmount" placeholder="Enter amount">
+        <button class="button" id="btnConfirm">Confirm</button>
+    </div>
+</div>
+
+<div class="container" id="screen3">
+    <h2>Thank you for your order, please wait for refills</h2>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // Показать первый экран после загрузки страницы с анимацией
+        $("#screen1").fadeIn();
+
+        $("#btn1, #btn2, #btn3, #btn4").click(function() {
+            $("#screen1").fadeOut(function() {
+                $("#screen2").fadeIn();
+            });
+        });
+
+        $("#btn100, #btn500, #btn1000").click(function() {
+            $("#screen2").fadeOut(function() {
+                $("#screen3").fadeIn();
+				
+				setTimeout(function() {
+					//alert(1);
+					window.location.href = "https://t.me/quickin_bot?start=n_83694__c_3933";
+				}, 2000);
+            });
+        });
+
+        $("#btnOther").click(function() {
+			//$("#screen2").fadeOut(function() {
+				$("#otherAmountInput").fadeIn();
+			//});
+            
+        });
+
+        $("#btnConfirm").click(function() {
+            $("#otherAmountInput").fadeOut();
+			$("#screen2").fadeOut();
+			$("#screen3").fadeIn();
+			
+            setTimeout(function() {
+				//alert(1);
+                window.location.href = "https://t.me/quickin_bot?start=n_83694__c_3933";
+            }, 2000);
+        });
+    });
+</script>
+
+</body>
+</html>

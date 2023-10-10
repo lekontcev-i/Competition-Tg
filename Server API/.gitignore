@@ -1,0 +1,26 @@
+# App configs
+app.config
+credentials.json
+projects-routers-hashes.yml
+
+# Caches and Python related
+*.pyc
+__pycache__
+envapp.config
+env
+Pipfile.lock
+.venv/
+
+# System Specific
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.ssh/
+.cache/
+.local/
+.psql_history
+
+# Editors
+.idea/
+.nova/

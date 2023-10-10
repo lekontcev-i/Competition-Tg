@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7R5-OU-GF9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Карта-->
+        <scene sceneID="8wk-xY-mG4">
+            <objects>
+                <viewController id="7R5-OU-GF9" customClass="QKMapViewController" customModule="Quickin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Ih-J0-3vX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALZ-e5-kex">
+                                <rect key="frame" x="0.0" y="112" width="414" height="784"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X04-uy-GGb" customClass="YMKMapView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="784"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDd-lv-9sZ">
+                                        <rect key="frame" x="350" y="24" width="48" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="85c-NH-NI8"/>
+                                            <constraint firstAttribute="width" constant="48" id="ddc-6o-m0H"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_setting"/>
+                                        <connections>
+                                            <action selector="didPressSettingsButton:" destination="7R5-OU-GF9" eventType="touchUpInside" id="ktw-WP-8A5"/>
+                                            <segue destination="tE0-PQ-oqf" kind="presentation" modalPresentationStyle="pageSheet" id="zY9-mA-JFC"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Поиск" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lvz-cN-HFU" customClass="QKTextFieldInset" customModule="Quickin" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="24" width="316" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="JVn-5x-unn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="7R5-OU-GF9" id="9es-pb-wRJ"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4If-05-ZzV" customClass="QKMapControlsView" customModule="Quickin" customModuleProvider="target">
+                                        <rect key="frame" x="359" y="511" width="40" height="153"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="153" id="XM7-ul-FLU"/>
+                                            <constraint firstAttribute="width" constant="40" id="lxy-6b-S8I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="X04-uy-GGb" firstAttribute="top" secondItem="ALZ-e5-kex" secondAttribute="top" id="4f1-Z8-50k"/>
+                                    <constraint firstAttribute="bottom" secondItem="4If-05-ZzV" secondAttribute="bottom" constant="120" id="7rA-dG-zll"/>
+                                    <constraint firstItem="lDd-lv-9sZ" firstAttribute="leading" secondItem="lvz-cN-HFU" secondAttribute="trailing" constant="18" id="8dY-bR-Ypm"/>
+                                    <constraint firstAttribute="trailing" secondItem="4If-05-ZzV" secondAttribute="trailing" constant="15" id="9sJ-3t-Nap"/>
+                                    <constraint firstAttribute="bottom" secondItem="X04-uy-GGb" secondAttribute="bottom" id="Hgx-vh-krL"/>
+                                    <constraint firstAttribute="trailing" secondItem="X04-uy-GGb" secondAttribute="trailing" id="MFK-HL-MOt"/>
+                                    <constraint firstItem="lDd-lv-9sZ" firstAttribute="top" secondItem="ALZ-e5-kex" secondAttribute="top" constant="24" id="MTU-vJ-So5"/>
+                                    <constraint firstItem="lDd-lv-9sZ" firstAttribute="centerY" secondItem="lvz-cN-HFU" secondAttribute="centerY" id="P2c-5v-567"/>
+                                    <constraint firstItem="X04-uy-GGb" firstAttribute="leading" secondItem="ALZ-e5-kex" secondAttribute="leading" id="acb-we-e53"/>
+                                    <constraint firstAttribute="trailing" secondItem="lDd-lv-9sZ" secondAttribute="trailing" constant="16" id="gGx-rr-KRA"/>
+                                    <constraint firstItem="lvz-cN-HFU" firstAttribute="leading" secondItem="ALZ-e5-kex" secondAttribute="leading" constant="16" id="moo-Jt-V5D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="puH-M9-XHK"/>
+                        <color key="backgroundColor" name="ui_color_orange"/>
+                        <constraints>
+                            <constraint firstItem="ALZ-e5-kex" firstAttribute="top" secondItem="2Ih-J0-3vX" secondAttribute="top" constant="112" id="4v8-0b-zcU"/>
+                            <constraint firstAttribute="bottom" secondItem="ALZ-e5-kex" secondAttribute="bottom" id="4zd-uH-Umf"/>
+                            <constraint firstItem="ALZ-e5-kex" firstAttribute="leading" secondItem="puH-M9-XHK" secondAttribute="leading" id="WhQ-tG-LjI"/>
+                            <constraint firstItem="ALZ-e5-kex" firstAttribute="trailing" secondItem="puH-M9-XHK" secondAttribute="trailing" id="tDx-Vi-iZQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Карта" id="RCz-dC-Jzc"/>
+                    <connections>
+                        <outlet property="containerView" destination="ALZ-e5-kex" id="i0J-pS-APP"/>
+                        <outlet property="mapControls" destination="4If-05-ZzV" id="0oR-lt-MlN"/>
+                        <outlet property="mapView" destination="X04-uy-GGb" id="J7h-FM-ted"/>
+                        <outlet property="searchField" destination="lvz-cN-HFU" id="2gk-5x-iOX"/>
+                        <outlet property="settingsButton" destination="lDd-lv-9sZ" id="Rmg-9a-ZvE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sH-aE-fKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1736.2318840579712" y="-198.21428571428569"/>
+        </scene>
+        <!--QKMapSettingsViewController-->
+        <scene sceneID="5Cb-Lf-Uwc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QKMapSettingsViewController" id="tE0-PQ-oqf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxq-pU-yVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1045" y="-198"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_setting" width="20" height="20"/>
+        <namedColor name="ui_color_orange">
+            <color red="0.97647058823529409" green="0.6588235294117647" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

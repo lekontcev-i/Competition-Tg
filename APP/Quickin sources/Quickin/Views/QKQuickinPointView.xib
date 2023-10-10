@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QKQuickinPointView" customModule="Quickin" customModuleProvider="target">
+            <connections>
+                <outlet property="authorizationCaptionLabel" destination="rbB-nE-Nuv" id="9PB-CA-t6p"/>
+                <outlet property="confirmButton" destination="iDR-8n-EGh" id="Y71-JH-9Zr"/>
+                <outlet property="onMapButton" destination="iHC-dc-Bcw" id="0Qa-Lh-GLb"/>
+                <outlet property="pickupPointAddressLabel" destination="T74-jy-nwz" id="COm-go-iOz"/>
+                <outlet property="pickupPointNameLabel" destination="thM-AY-P7k" id="d3X-aj-PBc"/>
+                <outlet property="scheduleDaysLabel" destination="O8U-g6-tER" id="208-AA-vai"/>
+                <outlet property="scheduleTimesLabel" destination="eOj-ws-3bz" id="hCU-m8-Glf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="H8R-Kz-IWi">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T74-jy-nwz" userLabel="Address label">
+                    <rect key="frame" x="16" y="70.5" width="304" height="40"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                    <color key="textColor" red="0.1176470588" green="0.14117647059999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thM-AY-P7k" userLabel="Name label">
+                    <rect key="frame" x="16" y="46" width="304" height="17.5"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="15"/>
+                    <color key="textColor" red="0.1176470588" green="0.14117647059999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbB-nE-Nuv" userLabel="decription label">
+                    <rect key="frame" x="16" y="16" width="304" height="14"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                    <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="09:00 - 19:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOj-ws-3bz" userLabel="Shedule times label">
+                    <rect key="frame" x="36" y="117.5" width="77.5" height="15.5"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                    <color key="textColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="254" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="753" text="Fr" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8U-g6-tER" userLabel="Shedule days label">
+                    <rect key="frame" x="16" y="117.5" width="12" height="15.5"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                    <color key="textColor" red="0.33725490200000002" green="0.33725490200000002" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDR-8n-EGh">
+                    <rect key="frame" x="16" y="153" width="101" height="31"/>
+                    <color key="backgroundColor" name="ui_color_orange"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="12" minY="8.5" maxX="12" maxY="8.5"/>
+                    <state key="normal" title="Подключится">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onConfirm:" destination="-1" eventType="touchUpInside" id="Kg2-kO-ytm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHC-dc-Bcw">
+                    <rect key="frame" x="123" y="153" width="149" height="31"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="12" minY="8.5" maxX="12" maxY="8.5"/>
+                    <state key="normal" title="Прооложить маршрут">
+                        <color key="titleColor" name="ui_color_orange"/>
+                    </state>
+                    <connections>
+                        <action selector="onMap:" destination="-1" eventType="touchUpInside" id="4lg-ID-ay5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="uFd-WW-Paf"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eOj-ws-3bz" firstAttribute="leading" secondItem="O8U-g6-tER" secondAttribute="trailing" constant="8" id="1ze-ud-rE3"/>
+                <constraint firstItem="rbB-nE-Nuv" firstAttribute="top" secondItem="H8R-Kz-IWi" secondAttribute="top" constant="16" id="2fK-Qh-mJM"/>
+                <constraint firstItem="thM-AY-P7k" firstAttribute="trailing" secondItem="T74-jy-nwz" secondAttribute="trailing" id="3SV-sp-MeG"/>
+                <constraint firstItem="thM-AY-P7k" firstAttribute="top" secondItem="rbB-nE-Nuv" secondAttribute="bottom" constant="16" id="41M-dc-hvT"/>
+                <constraint firstItem="O8U-g6-tER" firstAttribute="top" secondItem="T74-jy-nwz" secondAttribute="bottom" constant="7" id="A5g-Sl-0HY"/>
+                <constraint firstItem="rbB-nE-Nuv" firstAttribute="leading" secondItem="thM-AY-P7k" secondAttribute="leading" id="Dlc-hQ-5jj"/>
+                <constraint firstItem="iHC-dc-Bcw" firstAttribute="leading" secondItem="iDR-8n-EGh" secondAttribute="trailing" constant="6" id="GFG-Lm-mWa"/>
+                <constraint firstItem="iHC-dc-Bcw" firstAttribute="centerY" secondItem="iDR-8n-EGh" secondAttribute="centerY" id="Gfc-Y8-KXR"/>
+                <constraint firstItem="iDR-8n-EGh" firstAttribute="leading" secondItem="H8R-Kz-IWi" secondAttribute="leading" constant="16" id="K7g-lg-PCp"/>
+                <constraint firstItem="iDR-8n-EGh" firstAttribute="top" secondItem="O8U-g6-tER" secondAttribute="bottom" constant="20" id="Nic-I1-tcV"/>
+                <constraint firstAttribute="trailing" secondItem="T74-jy-nwz" secondAttribute="trailing" constant="16" id="UWb-Wg-LYj"/>
+                <constraint firstItem="thM-AY-P7k" firstAttribute="leading" secondItem="iDR-8n-EGh" secondAttribute="leading" id="XgG-oj-tVW"/>
+                <constraint firstItem="O8U-g6-tER" firstAttribute="leading" secondItem="thM-AY-P7k" secondAttribute="leading" id="dUD-eF-gZl"/>
+                <constraint firstItem="eOj-ws-3bz" firstAttribute="top" secondItem="O8U-g6-tER" secondAttribute="top" id="dg4-lp-VXZ"/>
+                <constraint firstItem="eOj-ws-3bz" firstAttribute="bottom" secondItem="O8U-g6-tER" secondAttribute="bottom" id="f3X-UD-tNC"/>
+                <constraint firstItem="uFd-WW-Paf" firstAttribute="bottom" secondItem="iDR-8n-EGh" secondAttribute="bottom" constant="16" id="miL-22-hcn"/>
+                <constraint firstItem="thM-AY-P7k" firstAttribute="trailing" secondItem="rbB-nE-Nuv" secondAttribute="trailing" id="oUA-Dp-zJE"/>
+                <constraint firstItem="T74-jy-nwz" firstAttribute="leading" secondItem="iDR-8n-EGh" secondAttribute="leading" id="qm5-qS-nku"/>
+                <constraint firstItem="T74-jy-nwz" firstAttribute="top" secondItem="thM-AY-P7k" secondAttribute="bottom" constant="7" id="u7q-2R-0la"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="166.66666666666669" y="191.51785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ui_color_orange">
+            <color red="0.97647058823529409" green="0.6588235294117647" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

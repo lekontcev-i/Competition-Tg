@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map Settings View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="QKMapSettingsViewController" customModule="Quickin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jND-a5-0ju">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3i-Jz-Zr0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="872"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_swipe_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="IYp-tI-yQd">
+                                        <rect key="frame" x="195.5" y="22" width="23" height="13"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PT0-4m-cZX">
+                                        <rect key="frame" x="15" y="74" width="384" height="370"/>
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-hF-v4b" customClass="QKPickValueControl" customModule="Quickin" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="sO8-9D-aUR"/>
+                                                </constraints>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDe-WH-lCH" customClass="QKPickValueControl" customModule="Quickin" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="66" width="384" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="wSI-NO-yqv"/>
+                                                </constraints>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EQ-B0-WFB" customClass="QKPickValueControl" customModule="Quickin" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="132" width="384" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="qHL-1g-XFS"/>
+                                                </constraints>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Atl-AC-BEf" customClass="QKPickValueControl" customModule="Quickin" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="198" width="384" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="1Jg-hn-MbL"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VlL-L3-MWh" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                                                <rect key="frame" x="0.0" y="264" width="384" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="tintColor" name="ui_color_gray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="JWQ-LJ-lUP"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumDistance">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="stepValue">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="trackTintColor">
+                                                        <color key="value" name="ui_color_gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="trackHighlightTintColor">
+                                                        <color key="value" name="ui_color_orange"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="knobTintColor">
+                                                        <color key="value" name="ui_color_orange"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="knobBorderTintColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                                                        <color key="value" name="ui_color_dark_gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="knobSize">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lowerValue">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="upperValue">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedMinValue">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedMaxValue">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="minLabelColor">
+                                                        <color key="value" name="ui_color_dark_gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="maxLabelColor">
+                                                        <color key="value" name="ui_color_dark_gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="handleColor">
+                                                        <color key="value" name="ui_color_orange"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="handleBorderColor">
+                                                        <color key="value" name="ui_color_gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="colorBetweenHandles">
+                                                        <color key="value" name="ui_color_orange"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="initialColor">
+                                                        <color key="value" name="ui_color_gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedHandleDiameterMultiplier">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="handleBorderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="handleDiameter">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOH-4H-epI" customClass="QKPickValueControl" customModule="Quickin" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="324" width="384" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="Lg6-kC-0bu"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2l-hm-cX0" customClass="QKQuickinButton" customModule="Quickin" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="738" width="184.5" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="l1h-23-Uxt"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIh-EX-ipm" customClass="QKQuickinButton" customModule="Quickin" customModuleProvider="target">
+                                        <rect key="frame" x="214.5" y="738" width="184.5" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="esh-l8-exe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="IYp-tI-yQd" firstAttribute="top" secondItem="v3i-Jz-Zr0" secondAttribute="top" constant="22" id="Ckg-0r-aNE"/>
+                                    <constraint firstAttribute="bottom" secondItem="N2l-hm-cX0" secondAttribute="bottom" constant="86" id="IHJ-Sw-b3J"/>
+                                    <constraint firstItem="PT0-4m-cZX" firstAttribute="leading" secondItem="v3i-Jz-Zr0" secondAttribute="leading" constant="15" id="JS9-bo-Acg"/>
+                                    <constraint firstItem="SIh-EX-ipm" firstAttribute="leading" secondItem="N2l-hm-cX0" secondAttribute="trailing" constant="15" id="SIt-Cj-fg8"/>
+                                    <constraint firstAttribute="trailing" secondItem="PT0-4m-cZX" secondAttribute="trailing" constant="15" id="ZTq-Lk-OsN"/>
+                                    <constraint firstItem="N2l-hm-cX0" firstAttribute="leading" secondItem="v3i-Jz-Zr0" secondAttribute="leading" constant="15" id="b5v-yn-CDq"/>
+                                    <constraint firstItem="PT0-4m-cZX" firstAttribute="top" secondItem="v3i-Jz-Zr0" secondAttribute="top" constant="74" id="iW2-FR-6bP"/>
+                                    <constraint firstItem="IYp-tI-yQd" firstAttribute="centerX" secondItem="v3i-Jz-Zr0" secondAttribute="centerX" id="n85-Mc-atw"/>
+                                    <constraint firstItem="N2l-hm-cX0" firstAttribute="centerY" secondItem="SIh-EX-ipm" secondAttribute="centerY" id="s1E-jW-PM8"/>
+                                    <constraint firstItem="SIh-EX-ipm" firstAttribute="width" secondItem="N2l-hm-cX0" secondAttribute="width" id="vTC-Qi-Esn"/>
+                                    <constraint firstAttribute="trailing" secondItem="SIh-EX-ipm" secondAttribute="trailing" constant="15" id="yi6-p8-3Fv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wgJ-fE-ynE"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v3i-Jz-Zr0" firstAttribute="leading" secondItem="jND-a5-0ju" secondAttribute="leading" id="c3I-Ic-ydL"/>
+                            <constraint firstItem="v3i-Jz-Zr0" firstAttribute="top" secondItem="wgJ-fE-ynE" secondAttribute="top" id="gOf-vd-Rt7"/>
+                            <constraint firstAttribute="bottom" secondItem="v3i-Jz-Zr0" secondAttribute="bottom" constant="-20" id="iyf-ud-hoH"/>
+                            <constraint firstAttribute="trailing" secondItem="v3i-Jz-Zr0" secondAttribute="trailing" id="jdf-0v-sRM"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="applayButton" destination="N2l-hm-cX0" id="pmw-xs-oYh"/>
+                        <outlet property="cancelButton" destination="SIh-EX-ipm" id="X2e-XC-wr9"/>
+                        <outlet property="containerView" destination="v3i-Jz-Zr0" id="hQs-nI-3jn"/>
+                        <outlet property="rangeControl" destination="VlL-L3-MWh" id="eBV-gE-Udu"/>
+                        <outletCollection property="selectingControls" destination="kRb-hF-v4b" collectionClass="NSMutableArray" id="wM7-mS-7G8"/>
+                        <outletCollection property="selectingControls" destination="bDe-WH-lCH" collectionClass="NSMutableArray" id="JDh-US-ygT"/>
+                        <outletCollection property="selectingControls" destination="7EQ-B0-WFB" collectionClass="NSMutableArray" id="eaI-FO-30u"/>
+                        <outletCollection property="selectingControls" destination="Atl-AC-BEf" collectionClass="NSMutableArray" id="pn0-5f-lPI"/>
+                        <outletCollection property="selectingControls" destination="SOH-4H-epI" collectionClass="NSMutableArray" id="CLH-lX-tBn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130.43478260869566" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="VlL-L3-MWh">
+            <size key="intrinsicContentSize" width="-1" height="65"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_swipe_arrow" width="23" height="13"/>
+        <namedColor name="ui_color_dark_gray">
+            <color red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ui_color_gray">
+            <color red="0.7803921568627451" green="0.792156862745098" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ui_color_orange">
+            <color red="0.97647058823529409" green="0.6588235294117647" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

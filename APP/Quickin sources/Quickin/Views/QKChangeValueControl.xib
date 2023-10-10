@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QKChangeValueControl" customModule="Quickin" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmButton" destination="DOq-lG-AcW" id="9yI-t1-DmF"/>
+                <outlet property="controlView" destination="rBI-NN-Wa0" id="cUA-7M-ztZ"/>
+                <outlet property="editIcon" destination="dx2-2t-OL7" id="Jgx-Zw-kJc"/>
+                <outlet property="headerLabel" destination="8c4-vG-Hrx" id="IOo-eu-NyW"/>
+                <outlet property="headerView" destination="DjE-ej-qF9" id="JyL-uH-QGa"/>
+                <outlet property="valueTextField" destination="4xb-Ch-hIc" id="NTG-1t-3v2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6cG-5z-Rz3">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tBq-GR-rW4">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DjE-ej-qF9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Номер телефона" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c4-vG-Hrx">
+                                    <rect key="frame" x="136.5" y="0.0" width="141" height="20"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                    <color key="textColor" name="ui_color_dark_gray"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_editSmall" translatesAutoresizingMaskIntoConstraints="NO" id="dx2-2t-OL7">
+                                    <rect key="frame" x="386" y="2" width="16" height="16"/>
+                                    <color key="tintColor" name="ui_color_orange"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="8c4-vG-Hrx" firstAttribute="centerY" secondItem="DjE-ej-qF9" secondAttribute="centerY" id="3eK-Gv-u93"/>
+                                <constraint firstItem="8c4-vG-Hrx" firstAttribute="centerX" secondItem="DjE-ej-qF9" secondAttribute="centerX" id="3hG-vh-QtM"/>
+                                <constraint firstAttribute="height" constant="20" id="4ud-f1-pxc"/>
+                                <constraint firstAttribute="trailing" secondItem="dx2-2t-OL7" secondAttribute="trailing" constant="12" id="Uit-fP-WRn"/>
+                                <constraint firstItem="dx2-2t-OL7" firstAttribute="centerY" secondItem="8c4-vG-Hrx" secondAttribute="centerY" id="nhZ-Rn-oR0"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBI-NN-Wa0">
+                            <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oit-L7-bz7">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+7 (454) 78-45-65" placeholder="Номер телефона" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xb-Ch-hIc">
+                                            <rect key="frame" x="0.0" y="0.0" width="260.5" height="60"/>
+                                            <color key="tintColor" name="ui_color_black"/>
+                                            <color key="textColor" name="ui_color_black"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="GXJ-LJ-JBx"/>
+                                            </connections>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOq-lG-AcW">
+                                            <rect key="frame" x="265.5" y="0.0" width="148.5" height="60"/>
+                                            <color key="backgroundColor" name="ui_color_orange"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                            <state key="normal" title="Подтвердить">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didPressConfirmButton:" destination="-1" eventType="touchUpInside" id="fkM-RX-DiY"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="DOq-lG-AcW" secondAttribute="bottom" id="EMr-EV-Cnr"/>
+                                        <constraint firstAttribute="trailing" secondItem="DOq-lG-AcW" secondAttribute="trailing" id="N31-Ds-CVd"/>
+                                        <constraint firstItem="DOq-lG-AcW" firstAttribute="top" secondItem="Oit-L7-bz7" secondAttribute="top" id="RWd-1i-5DE"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Oit-L7-bz7" secondAttribute="trailing" id="DM1-4B-fF5"/>
+                                <constraint firstItem="Oit-L7-bz7" firstAttribute="leading" secondItem="rBI-NN-Wa0" secondAttribute="leading" id="Dtf-EO-jIl"/>
+                                <constraint firstItem="Oit-L7-bz7" firstAttribute="top" secondItem="rBI-NN-Wa0" secondAttribute="top" id="MxW-ed-F2Y"/>
+                                <constraint firstAttribute="bottom" secondItem="Oit-L7-bz7" secondAttribute="bottom" id="fFy-AN-YcW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tBq-GR-rW4" firstAttribute="leading" secondItem="6cG-5z-Rz3" secondAttribute="leading" id="BUH-Vj-4ua"/>
+                <constraint firstAttribute="trailing" secondItem="tBq-GR-rW4" secondAttribute="trailing" id="ORZ-h8-wfq"/>
+                <constraint firstAttribute="bottom" secondItem="tBq-GR-rW4" secondAttribute="bottom" id="Weg-qq-VNS"/>
+                <constraint firstItem="tBq-GR-rW4" firstAttribute="top" secondItem="6cG-5z-Rz3" secondAttribute="top" id="g84-ES-hgq"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-130.43478260869566" y="-183.48214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_editSmall" width="16" height="16"/>
+        <namedColor name="ui_color_black">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ui_color_dark_gray">
+            <color red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ui_color_orange">
+            <color red="0.97647058823529409" green="0.6588235294117647" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

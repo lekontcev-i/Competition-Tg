@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0L6-Th-EcX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial First View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="QKTutorialFirstViewController" customModule="Quickin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greetings" translatesAutoresizingMaskIntoConstraints="NO" id="pAa-Io-lh5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pAa-Io-lh5" secondAttribute="trailing" id="W6a-aO-G4t"/>
+                            <constraint firstItem="pAa-Io-lh5" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="WDx-Lo-SCs"/>
+                            <constraint firstAttribute="bottom" secondItem="pAa-Io-lh5" secondAttribute="bottom" id="eh8-IR-bbf"/>
+                            <constraint firstItem="pAa-Io-lh5" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="fk7-po-6kr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Snl-J7-nML">
+                        <barButtonItem key="backBarButtonItem" enabled="NO" title=" " id="w7C-cZ-RfK">
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="mXg-ly-v8P" kind="show" identifier="QKSecondTotorialSegueId" id="yaX-sX-QdZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="82"/>
+        </scene>
+        <!--Tutorial Second View Controller-->
+        <scene sceneID="tAx-Lz-KXA">
+            <objects>
+                <viewController id="mXg-ly-v8P" customClass="QKTutorialSecondViewController" customModule="Quickin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vdB-Ta-b8x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="im_greetings2" translatesAutoresizingMaskIntoConstraints="NO" id="Fza-MO-ynk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h7z-is-Scg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fza-MO-ynk" firstAttribute="top" secondItem="vdB-Ta-b8x" secondAttribute="top" id="SAy-fn-Uk8"/>
+                            <constraint firstItem="Fza-MO-ynk" firstAttribute="trailing" secondItem="h7z-is-Scg" secondAttribute="trailing" id="YsZ-FS-CCO"/>
+                            <constraint firstItem="Fza-MO-ynk" firstAttribute="leading" secondItem="h7z-is-Scg" secondAttribute="leading" id="oEy-u1-gdO"/>
+                            <constraint firstAttribute="bottom" secondItem="Fza-MO-ynk" secondAttribute="bottom" id="t3K-Db-qHP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6aG-RE-ANX"/>
+                    <connections>
+                        <segue destination="nZ1-xF-Ol3" kind="show" identifier="QKThirdTotorialSegueId" id="apb-dP-39c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfY-tV-r5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="82"/>
+        </scene>
+        <!--Quickin-->
+        <scene sceneID="Lmd-Ez-k35">
+            <objects>
+                <viewController id="nZ1-xF-Ol3" customClass="QKTutorialThirdViewController" customModule="Quickin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="myZ-2g-ev4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="im_greetings3" translatesAutoresizingMaskIntoConstraints="NO" id="ORd-ye-3AO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fFY-Yi-DyI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ORd-ye-3AO" secondAttribute="bottom" id="8su-G7-cWq"/>
+                            <constraint firstItem="ORd-ye-3AO" firstAttribute="top" secondItem="myZ-2g-ev4" secondAttribute="top" id="eGg-Q4-UIT"/>
+                            <constraint firstItem="ORd-ye-3AO" firstAttribute="trailing" secondItem="fFY-Yi-DyI" secondAttribute="trailing" id="lvy-fI-dRq"/>
+                            <constraint firstItem="ORd-ye-3AO" firstAttribute="leading" secondItem="fFY-Yi-DyI" secondAttribute="leading" id="pPB-o1-Nfp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quickin" id="cPh-wY-rcz">
+                        <barButtonItem key="leftBarButtonItem" image="ic_arrowLeft" id="uan-8i-Gg1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didPressBackButton:" destination="nZ1-xF-Ol3" id="umb-aH-lsP"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="ic_xCircle" id="oKv-9k-mSX">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didPressCloseButton:" destination="nZ1-xF-Ol3" id="fOg-pa-jie"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mgt-rP-87R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2430" y="82"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ela-Jg-cLA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xjE-Ub-jwl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CRM-p1-QH0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="ui_color_orange"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="29"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="40J-0i-uvc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDA-xh-XdQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="82.366071428571431"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="J0Z-aw-5eX">
+            <objects>
+                <viewController id="0L6-Th-EcX" customClass="QKTutorialViewController" customModule="Quickin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XC2-o0-w3r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iBC-IY-boN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="xjE-Ub-jwl" kind="embed" id="8yj-Vo-3xz"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDg-kJ-qzs" customClass="QKQuickinButton" customModule="Quickin" customModuleProvider="target">
+                                <rect key="frame" x="16" y="806" width="382" height="60"/>
+                                <color key="backgroundColor" name="ui_color_orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hEA-9d-k62"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DTe-4A-WQl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DTe-4A-WQl" firstAttribute="trailing" secondItem="EDg-kJ-qzs" secondAttribute="trailing" constant="16" id="0JQ-gk-Q9u"/>
+                            <constraint firstItem="EDg-kJ-qzs" firstAttribute="leading" secondItem="DTe-4A-WQl" secondAttribute="leading" constant="16" id="1DN-hN-XGf"/>
+                            <constraint firstItem="iBC-IY-boN" firstAttribute="leading" secondItem="XC2-o0-w3r" secondAttribute="leading" id="2e4-pW-zkY"/>
+                            <constraint firstAttribute="bottom" secondItem="iBC-IY-boN" secondAttribute="bottom" id="Nge-iv-jL1"/>
+                            <constraint firstAttribute="trailing" secondItem="iBC-IY-boN" secondAttribute="trailing" id="PNa-Q2-2xo"/>
+                            <constraint firstAttribute="bottom" secondItem="EDg-kJ-qzs" secondAttribute="bottom" constant="30" id="cyV-h8-fXe"/>
+                            <constraint firstItem="iBC-IY-boN" firstAttribute="top" secondItem="XC2-o0-w3r" secondAttribute="top" id="pSg-BB-St5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="iBC-IY-boN" id="may-XZ-gBB"/>
+                        <outlet property="nextButton" destination="EDg-kJ-qzs" id="uhV-cZ-B3n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fs2-YX-pRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-917" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="greetings" width="414" height="896"/>
+        <image name="ic_arrowLeft" width="24" height="24"/>
+        <image name="ic_xCircle" width="24" height="24"/>
+        <image name="im_greetings2" width="414" height="896"/>
+        <image name="im_greetings3" width="414" height="896"/>
+        <namedColor name="ui_color_orange">
+            <color red="0.97647058823529409" green="0.6588235294117647" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
